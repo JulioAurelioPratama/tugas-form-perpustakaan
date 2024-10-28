@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    body {
+      background: url(OIP.jpeg) no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      opacity: 0.6;
+    }
+    .main {
+      background-color: rgb(11, 119, 243);
+      border: 2px dashed white;
+      border-radius: 20px;
+      margin: auto;
+      width: 150vh;
+      margin-top: 3vh;
+    }
+
+    .second {
+      margin: 30px;
+    }
+
+    .second h2 {
+      text-align: center;
+      border-bottom: 2px dashed white;
+      color: white;
+    }
+
+    .second label {
+      color: white;
+    }
+
+    .third {
+      display: block;
+      padding: 10px 0 0 45%;
+    }
+
+    .third button {
+      width: 100px;
+      height: 25px;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <div class="main">
+      <div class="second">
+        <h2>Formulir Anggota Perpustakaan</h2>
+
+        <label for="nama">Nama</label><br />
+        <input type="text" id="nama" name="nama" placeholder="Masukan nama anda" size="50" />
+
+        <br /><br />
+        <label for="kota_lahir">Kota Kelahiran</label><br />
+        <input type="text" id="kota_lahir" name="kota_lahir" placeholder="Masukan kota lahir anda" size="50" />
+
+        <br /><br />
+        <label for="tanggal_lahir">Tanggal Lahir</label><br />
+        <input type="date" id="tanggal_lahir" name="tanggal_lahir" />
+
+        <br /><br />
+        <label>Gender</label><br />
+        <input type="radio" id="pria" name="kelamin" value="Pria" /><label for="pria">Pria</label>
+        <input type="radio" id="wanita" name="kelamin" value="Wanita" /><label for="wanita">Wanita</label>
+
+        <br /><br />
+        <label for="telepon">No. Telepon</label><br />
+        <input type="tel" id="telepon" name="telepon" placeholder="Masukan Nomor Telepon anda" maxlength="10" size="50" />
+
+        <br /><br />
+        <label>Makanan Favorit</label><br />
+        <input type="checkbox" id="nasi_goreng" name="makanan_favorit" value="Nasi Goreng" /><label for="nasi_goreng">Nasi Goreng</label>
+        <input type="checkbox" id="mie_goreng" name="makanan_favorit" value="Mie Goreng" /><label for="mie_goreng">Mie Goreng</label>
+
+        <br /><br />
+        <label for="agama">Agama</label><br />
+        <select id="agama" name="agama" style="width: 50%">
+          <option value="Islam">Islam</option>
+          <option value="Kristen">Kristen</option>
+          <option value="Katholik">Katholik</option>
+          <option value="Hindu">Hindu</option>
+          <option value="Buddha">Buddha</option>s
+          <option value="Konghucu">Konghucu</option>
+        </select>
+
+        <br /><br />
+        <label for="alamat">Alamat</label><br />
+        <textarea id="alamat" name="alamat" style="width: 50%"></textarea>
+
+        <div class="third">
+          <button type="reset">Clear</button>
+          <button type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</body>
+</html>
